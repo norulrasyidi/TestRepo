@@ -3,8 +3,8 @@
   <POU Name="MAIN" Id="{cad1bc61-e90a-4206-8dc6-f8581a2d6c0e}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	//fbTon : TON := (PT := T#10S);
-	//bThisIsABoolean : BOOL;	
+	fbTon : TON := (PT := T#10S);
+	bThisIsABoolean : BOOL;	
 
 	//fbTof : TOF := (PT := T#10S);
 	//bThisIsABoolean : BOOL;
@@ -23,7 +23,7 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[//fbTon(in := bThisIsABoolean);
+      <ST><![CDATA[fbTon(in := bThisIsABoolean);
 //fbTof(in := bThisIsABoolean);
 
 //fbFtrig(CLK := bSomeBoolean);
