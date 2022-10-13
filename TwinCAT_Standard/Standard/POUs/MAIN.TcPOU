@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <POU Name="MAIN" Id="{cad1bc61-e90a-4206-8dc6-f8581a2d6c0e}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	//fbTon : TON := (PT := T#10S);
+	//bThisIsABoolean : BOOL;	
+
+	//fbTof : TOF := (PT := T#10S);
+	//bThisIsABoolean : BOOL;
+	
+	//fbRtrig : R_TRIG;
+	//bSomeBoolean : BOOL;
+	//nTriggerCounter : ULINT;
+	
+	//fbFtrig : F_TRIG;
+	//bSomeBoolean : BOOL;
+	//nTriggerCounter : ULINT;
+	
+	sString1 : STRING(255) := 'Hello';
+	sString2 : STRING(255) := 'World';
+	sResultString : STRING(255);
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[//fbTon(in := bThisIsABoolean);
+//fbTof(in := bThisIsABoolean);
+
+//fbFtrig(CLK := bSomeBoolean);
+//IF fbFtrig.Q THEN
+	//nTriggerCounter := nTriggerCounter + 1;
+//END_IF
+
+sResultString := CONCAT(STR1 := sString1, STR2 := sString2);]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="18" Count="0" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="19" Count="2" />
+      <LineId Id="27" Count="0" />
+      <LineId Id="26" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
